@@ -26,17 +26,22 @@ if ($peso <= 0 || $altura <= 0) {
 ?>
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head><meta charset="UTF-8"><title>Calculadora de IMC</title></head>
-<body>
-<h1>Calculadora de IMC</h1>
-<?php if ($erro): ?>
-    <p style="color:red;"><?= $erro ?></p>
-<?php else: ?>
-    <p>Peso: <?= $peso ?> kg</p>
-    <p>Altura: <?= $altura ?> m</p>
-    <p>IMC: <strong><?= $imcFormatado ?></strong></p>
-    <p>Classificação: <strong><?= $classe ?></strong></p>
-<?php endif; ?>
-</body>
-</html>
 
+<head>
+    <meta charset="UTF-8">
+    <title>Calculadora de IMC</title>
+</head>
+
+<body>
+    <h1>Calculadora de IMC</h1>
+    <?php if ($erro): ?>
+        <p style="color:red;"><?= $erro ?></p>
+    <?php else: ?>
+        <p>Peso: <?= $peso ?> kg</p>
+        <p>Altura: <?= $altura ?> m</p>
+        <p>IMC: <strong><?= $imcFormatado ?></strong></p>
+        <p>Classificação: <strong><?= $classe ?></strong></p>
+    <?php endif; ?>
+</body>
+
+</html>
